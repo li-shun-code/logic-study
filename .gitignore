@@ -4,3 +4,10 @@ node_modules/
 dist/
 coverage/
 *.epub
+
+# 临时解析/脚手架产物（非网站源码）
+.chapter_table.tmp.md
+.epub_*.txt
+.epub_*.json
+.opf_dump.txt
+.tmp_*.py
