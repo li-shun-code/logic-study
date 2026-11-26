@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: '逻辑学导论 · 学习指南',
-  description: '把《逻辑学导论（第15版）》读成一步一步能走完的课程',
+  description: '《逻辑学导论（第15版）》原文全文，按 14 章 90 节逐节呈现，可搜索、可问答',
   lang: 'zh-CN',
   srcDir: 'docs',
   base: '/logic-study/',
@@ -21,6 +21,8 @@ export default defineConfig({
         items: [
           { text: '学习路径', link: '/guide/' },
           { text: '前言：这本书该怎么读', link: '/preface/' },
+          { text: '极简逻辑史', link: '/front/history' },
+          { text: '现实生活中的逻辑', link: '/front/real-life-logic' },
           { text: '中英文术语表', link: '/reference/terms' },
         ],
       },
@@ -211,6 +213,23 @@ export default defineConfig({
       { text: "14.2 概率演算", link: '/ch14/14.2' },
       { text: "14.3 日常生活中的概率", link: '/ch14/14.3' }
     ],
+  },
+  {
+    text: '附录与索引',
+    collapsed: true,
+    items: [
+      { text: '前言', link: '/preface/' },
+      { text: '极简逻辑史', link: '/front/history' },
+      { text: '现实生活中的逻辑', link: '/front/real-life-logic' },
+      { text: '三段论15有效式推导', link: '/appendix/syllogism-derivation' },
+      { text: '简化真值表附录 A–D', link: '/appendix/truthtable-a' },
+      { text: '逻辑学家小传', link: '/appendix/biographies' },
+      { text: '部分练习题解答', link: '/appendix/answers' },
+      { text: '中英文术语索引', link: '/reference/terms' },
+      { text: '第11版译者后记', link: '/appendix/afterword-11' },
+      { text: '第13版译者后记', link: '/appendix/afterword-13' },
+      { text: '第15版译者后记', link: '/appendix/afterword-15' },
+    ],
   }
     ],
     search: {
@@ -219,7 +238,7 @@ export default defineConfig({
     },
     outline: { title: '本课路线', level: [2, 3] },
     docFooter: { prev: '上一课', next: '下一课' },
-    footer: { message: '原创讲解 · 按原书章节顺序 · 无账号无追踪' },
+    footer: { message: '原书原文逐节呈现 · 按原书章节顺序 · 无账号无追踪' },
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '课程目录',
     darkModeSwitchLabel: '外观',
