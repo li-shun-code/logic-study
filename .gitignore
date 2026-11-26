@@ -11,3 +11,4 @@ coverage/
 .epub_*.json
 .opf_dump.txt
 .tmp_*.py
+.sources/
