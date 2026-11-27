@@ -1,6 +1,19 @@
 import { defineConfig } from 'vitepress'
+import { defineTeekConfig } from 'vitepress-theme-teek/config'
+
+const teekConfig = defineTeekConfig({
+  teekHome: false,
+  vpHome: true,
+  vitePlugins: {
+    sidebar: false,
+    permalink: false,
+    mdH1: false,
+    docAnalysis: false
+  }
+})
 
 export default defineConfig({
+  extends: teekConfig,
   title: '逻辑学导论 · 学习指南',
   description: '《逻辑学导论（第15版）》原文全文，按 14 章 90 节逐节呈现，可搜索、可问答',
   lang: 'zh-CN',
