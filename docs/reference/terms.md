@@ -2,7 +2,7 @@
 title: "中英文术语索引"
 ---
 
-中英文术语索引
+# 中英文术语索引
 
 被定义项(Definiendum)：在任一定义中，被定义的词或符号，103-04,121。亦见各种定义类型(Specific types of definition)
 
